@@ -1,667 +1,476 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Muhammad Zohair Adil Khan - Senior Software Engineer specializing in .NET Core, Angular, Flutter. 6+ years of enterprise software development experience in Karachi, Pakistan.">
+  <title>Muhammad Zohair Adil Khan | Senior Software Engineer</title>
+  <link rel="icon" type="image/x-icon" href="images/icon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/portfolio.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-brand">ZA<span class="accent">.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
 
-    <title>MUHAMMAD ZOHAIR ADIL KHAN</title>
-	
-	<link rel="icon" type="image/x-icon" href="images/icon.ico">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-glow glow-1"></div>
+      <div class="hero-glow glow-2"></div>
+    </div>
+    <div class="hero-container">
+      <div class="hero-badge"><span class="status-dot"></span>Available for opportunities</div>
+      <h1 class="hero-name"><span class="gradient-text">Muhammad Zohair Adil Khan</span><br></h1>
+      <h2 class="hero-title">Senior Software Engineer</h2>
+      <p class="hero-sub">6+ years building enterprise-grade systems with <strong>.NET Core</strong>, <strong>Angular</strong> &amp; <strong>Flutter</strong>. Specializing in ERP integrations, API architecture, and AI-augmented development.</p>
+      <div class="hero-location"><i class="fa-solid fa-location-dot"></i> Karachi, Pakistan</div>
+      <div class="hero-tech">
+        <span class="tech-badge">.NET Core</span>
+        <span class="tech-badge">Angular</span>
+        <span class="tech-badge">Flutter</span>
+        <span class="tech-badge">C#</span>
+        <span class="tech-badge">Power BI</span>
+        <span class="tech-badge">Docker / K8s</span>
+      </div>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View Projects <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="https://linkedin.com/in/zohairadil" target="_blank" class="btn btn-outline"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        <a href="#contact" class="btn btn-ghost">Contact Me</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">6+</span><span class="stat-label">Years Exp.</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">4</span><span class="stat-label">Companies</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">10+</span><span class="stat-label">Projects</span></div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-cue"><span></span></a>
+  </section>
 
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-<link rel="stylesheet" href="css/lightbox.css"><!-- for gallery css -->
-    <link rel="stylesheet" href="css/aos.css">
-
-    <link rel="stylesheet" href="css/ionicons.min.css">
-    
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
-
-	  <style>
-  .gallery-grids.grid-mdl {
-    margin-top: 2em;
-}
-.gallery-box {
-    display: block;
-    overflow: hidden;
-    width: 100%;
-	transition: .3s;
-	-webkit-transition: .3s;
-    -moz-transition: .3s;
-    -o-transition: .3s;
-    -ms-transition: .3s;
-}
-.gallery-box img {
-    width: 100%;
-}
-/*-- image-zoom --*/
-img.zoom-img {
-    transform: scale(1, 1);
-    -webkit-transform: scale(1, 1);
-    -moz-transform: scale(1, 1);
-    -ms-transform: scale(1, 1);
-    -o-transform: scale(1, 1);
-    transition-timing-function: ease-out;
-    -webkit-transition-timing-function: ease-out;
-    -moz-transition-timing-function: ease-out;
-    -ms-transition-timing-function: ease-out;
-    -o-transition-timing-function: ease-out;
-    -webkit-transition-duration: .5s;
-    -moz-transition-duration: .5s;
-    -ms-transition-duration: .5s;
-    -o-transition-duration: .5s;
-}
-img.zoom-img:hover {
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -o-transform: scale(1.2);
-    -webkit-transition-timing-function: ease-in-out;
-    -webkit-transition-duration: 750ms;
-    -moz-transition-timing-function: ease-in-out;
-    -moz-transition-duration: 750ms;
-    -ms-transition-timing-function: ease-in-out;
-    -o-transition-timing-function: ease-in-out;
-    -ms-transition-duration: 750ms;
-    -o-transition-duration: 750ms;
-    overflow: hidden;
-}
-.gallery-grids {
-		width: 25%;
-		float: left;
-	}
-	.gallery-grids {
-		padding: 0 5px;
-	}
-	.gallery-grids.grid-mdl {
-		margin-top: .6em;
-	}
-/*-- //image-zoom --*/
-/*-- //gallery --*/
-
-  </style>
-  </head>
-
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-	  
-	  
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Portfolio</a>
-	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
-
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-	          <li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
-	          <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>	          
-	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Resume</span></a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
-	  <section id="home-section" class="hero">
-		  <div class="home-slider  owl-carousel">
-	      <div class="slider-item ">
-	      	<div class="overlay"></div>
-	        <div class="container">
-	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third order-md-last img" style="background-image:url(images/bg_1.jpg);">
-	          		<div class="overlay"></div>
-	          	</div>
-		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<!-- <a href="https://vimeo.com/45830194" class="icon-video popup-vimeo d-flex justify-content-center align-items-center"> -->
-	    						<!-- <span class="ion-ios-play play"></span> -->
-	    					<!-- </a> -->
-		          	<div class="text">
-		          		<span class="subheading">Hello</span>
-			            <h1 class="mb-4 mt-3">I'm <span>Muhammad Zohair Adil Khan</span></h1>
-			            <h3 class="mb-4">Software Engineer</h3>			            
-		            </div>
-		          </div>
-	        	</div>
-	        </div>
-	      </div>
-
-	      <!-- <div class="slider-item">
-	      	<div class="overlay"></div>
-	        <div class="container">
-	          <div class="row d-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third order-md-last img" style="background-image:url(images/bg_2.jpg);">
-	          		<div class="overlay"></div>
-	          	</div>
-		          <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<a href="https://vimeo.com/45830194" class="icon-video popup-vimeo d-flex justify-content-center align-items-center">
-	    						<span class="ion-ios-play play"></span>
-	    					</a>
-		          	<div class="text">
-			            <h1 class="mb-4 mt-3">I'm a <span>web designer</span> from Scotland</h1>
-			            <p><a href="#" class="btn-custom">Hire me</a></p>
-		            </div>
-		          </div>
-	        	</div>
-	        </div>
-	      </div> -->
-	    </div>
-    </section>
-
-    <section class="ftco-about ftco-counter img ftco-section" id="about-section">
-    	<div class="container">
-    		<div class="row d-flex">
-    			<div class="col-md-6 col-lg-5 d-flex">
-    				<div class="img-about img d-flex align-items-stretch">
-    					<div class="overlay"></div>
-	    				<div class="img d-flex align-self-stretch align-items-center" style="background-image:url(images/about_1.jpg);">
-	    				</div>
-    				</div>
-    			</div>
-    			<div class="col-md-6 col-lg-7 pl-lg-5 py-5">
-    				<div class="row justify-content-start pb-3">
-		          <div class="col-md-12 heading-section ftco-animate">
-		          	<span class="subheading">Welcome</span>
-		            <h2 class="mb-4" style="font-size: 34px; text-transform: capitalize;">About Me</h2>
-		            <p>Experienced with all stages of the development cycle for dynamic web projects. Well-versed in numerous programming languages including C#, PHP, JAVA, Microsoft Power BI, SQL, MYSQL & ORACLE. Strong engineering professional with a BSCS focused on Computer Engineering from PAF Karachi Institute of Economics & Technology.</p>
-		          </div>
-		        </div>
-		        <div class="row">
-		        	<div class="col-md-6">
-		        		<div class="media block-6 services d-block ftco-animate">
-		              <div class="icon"><span class="flaticon-analysis"></span></div>
-		              <div class="media-body">
-		                <h3 class="heading mb-3">AI Application</h3>
-		                <p>I have completed multiple projects on desktop applications using AI and developed an optical mark recognition MCQ checking app using the Python language.</p>
-		              </div>
-		            </div> 
-		        	</div>
-		        	<div class="col-md-6">
-		        		<div class="media block-6 services d-block ftco-animate">
-		              <div class="icon"><span class="flaticon-analysis"></span></div>
-		              <div class="media-body">
-		                <h3 class="heading mb-3">Web Application</h3>
-		                <p>As a passionate web developer, I'm excited to present my main creation.</p>
-		              </div>
-		            </div> 
-		        	</div>
-		        </div>
-	          <div class="counter-wrap ftco-animate d-flex mt-md-3">
-              <div class="text p-4 pr-5 bg-primary">
-              	<p class="mb-0">
-	                <span class="number" data-number="10">0</span>
-	                <span>Finished Projects</span>
-                </p>
-              </div>
-	          </div>
-	        </div>
-        </div>
-    	</div>
-    </section>
-		
-		<section class="ftco-section bg-light" id="skills-section">
-			<div class="container">
-				<div class="row justify-content-center pb-5">
-          <div class="col-md-12 heading-section text-center ftco-animate">
-          	<span class="subheading">Skills</span>
-            <h2 class="mb-4">MY SKILLS</h2>
-            <p>I have good skills on both Back-End and front end Development on Web App and Mobile App </p>
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-avatar-wrap">
+          <div class="avatar-ring">
+            <img src="images/about_1.jpg" alt="Muhammad Zohair Adil Khan" class="avatar-img">
+          </div>
+          <div class="avatar-cards">
+            <div class="avatar-card"><i class="fa-solid fa-code"></i><span>.NET Core Expert</span></div>
+            <div class="avatar-card"><i class="fa-solid fa-mobile-screen"></i><span>Flutter Dev</span></div>
+            <div class="avatar-card"><i class="fa-solid fa-robot"></i><span>AI Workflow</span></div>
           </div>
         </div>
-				<div class="row">
-					<div class="col-md-6 animate-box">
-						<div class="progress-wrap ftco-animate">
-							<h3>.Net</h3>
-							<div class="progress">
-							 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="85"
-							  	aria-valuemin="0" aria-valuemax="100" style="width:80%">
-							    <span>80%</span>
-							  	</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 animate-box">
-						<div class="progress-wrap ftco-animate">
-							<h3>C#</h3>
-							<div class="progress">
-							 	<div class="progress-bar color-5" role="progressbar" aria-valuenow="70"
-							  	aria-valuemin="0" aria-valuemax="100" style="width:80%">
-							    <span>80%</span>
-							  	</div>
-							</div>
-						</div>
-					</div>
-						
-					<div class="col-md-6 animate-box">
-						<div class="progress-wrap ftco-animate">
-							<h3>SQL</h3>
-							<div class="progress">
-							 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
-							  	aria-valuemin="0" aria-valuemax="100" style="width:80%">
-							    <span>80%</span>
-							  	</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 animate-box">
-						<div class="progress-wrap ftco-animate">
-							<h3>MYSQL</h3>
-							<div class="progress">
-							 	<div class="progress-bar color-5" role="progressbar" aria-valuenow="70"
-							  	aria-valuemin="0" aria-valuemax="100" style="width:80%">
-							    <span>80%</span>
-							  	</div>
-							</div>
-						</div>
-					</div>
-						
-					<div class="col-md-6 animate-box">
-						<div class="progress-wrap ftco-animate">
-							<h3>ORACLE</h3>
-							<div class="progress">
-							 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
-							  	aria-valuemin="0" aria-valuemax="100" style="width:75%">
-							    <span>75%</span>
-							  	</div>
-							</div>
-						</div>
-					</div>
-				<div class="col-md-6 animate-box">
-						<div class="progress-wrap ftco-animate">
-							<h3>XAMARIN</h3>
-							<div class="progress">
-							 	<div class="progress-bar color-2" role="progressbar" aria-valuenow="70"
-							  	aria-valuemin="0" aria-valuemax="100" style="width:65%">
-							    <span>65%</span>
-							  	</div>
-							</div>
-						</div>
-					</div>
-					
-					
-					<div class="col-md-6 animate-box">
-						<div class="progress-wrap ftco-animate">
-							<h3>BASH SCRIPT</h3>
-							<div class="progress">
-							 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
-							  	aria-valuemin="0" aria-valuemax="100" style="width:70%">
-							    <span>65%</span>
-							  	</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 animate-box">
-						<div class="progress-wrap ftco-animate">
-							<h3>GITHUB</h3>
-							<div class="progress">
-							 	<div class="progress-bar color-3" role="progressbar" aria-valuenow="60"
-							  	aria-valuemin="0" aria-valuemax="100" style="width:65%">
-							    <span>65%</span>
-							  	</div>
-							</div>
-						</div>
-					</div>
-					
-					<div class="col-md-6 animate-box">
-						<div class="progress-wrap ftco-animate">
-							<h3>JAVASCRIPT</h3>
-							<div class="progress">
-							 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
-							  	aria-valuemin="0" aria-valuemax="100" style="width:65%">
-							    <span>65%</span>
-							  	</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 animate-box">
-						<div class="progress-wrap ftco-animate">
-							<h3>PHP</h3>
-							<div class="progress">
-							 	<div class="progress-bar color-4" role="progressbar" aria-valuenow="65"
-							  	aria-valuemin="0" aria-valuemax="100" style="width:80%">
-							    <span>80%</span>
-							  	</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-					
-				<div class="row justify-content-center py-5 mt-5">
-          <div class="col-md-12 heading-section text-center ftco-animate">
-          	<span class="subheading">What I Do</span>
-            <h2 class="mb-4">My areas of expertise include strategy, logic, and testing.</h2>
-            <p>Through collaboration and effective communication, I lead teams to deliver high-quality projects, emphasizing optimization and continuous improvement.</p>
+        <div class="about-content">
+          <p class="about-text lead">Results-driven <strong>Senior Software Engineer</strong> with over <strong>6+ years</strong> of experience in the full software development lifecycle.</p>
+          <p class="about-text">Specialized in <strong>C#, .NET Core, Angular, and Flutter</strong>. Expert in leveraging AI-augmented development workflows (Cursor, Antigravity) to optimize code quality and delivery speed. Proven expertise in enterprise-level integrations, ERP modules, and migrating legacy systems to modern architectures.</p>
+          <div class="about-highlights">
+            <div class="highlight-item"><i class="fa-solid fa-check-circle"></i> Microsoft Dynamics 365 Integration</div>
+            <div class="highlight-item"><i class="fa-solid fa-check-circle"></i> Legacy to Modern Migration (Xamarin → Flutter)</div>
+            <div class="highlight-item"><i class="fa-solid fa-check-circle"></i> Enterprise ERP &amp; API Architecture</div>
+            <div class="highlight-item"><i class="fa-solid fa-check-circle"></i> CI/CD &amp; DevOps (Docker, K8s, AWS)</div>
+            <div class="highlight-item"><i class="fa-solid fa-check-circle"></i> AI-Augmented Dev Workflows</div>
+            <div class="highlight-item"><i class="fa-solid fa-check-circle"></i> Power BI Executive Dashboards</div>
           </div>
-        </div>
-
-        <div class="row">
-					<div class="col-md-4 text-center d-flex ftco-animate">
-						<div class="services-1">
-							<span class="icon">
-								<i class="flaticon-analysis"></i>
-							</span>
-							<div class="desc">
-								<h3 class="mb-5"><a href="#">Explore</a></h3>
-								<h4>Design Sprints</h4>
-								<h4>Product Strategy</h4>
-								<h4>Optimization</h4>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 text-center d-flex ftco-animate">
-						<div class="services-1">
-							<span class="icon">
-								<i class="flaticon-flasks"></i>
-							</span>
-							<div class="desc">
-								<h3 class="mb-5"><a href="#">Create</a></h3>
-								<h4>New Innovation</h4>
-								<h4>Problem Solving</h4>
-								<h4>Integration</h4>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 text-center d-flex ftco-animate">
-						<div class="services-1">
-							<span class="icon">
-								<i class="flaticon-ideas"></i>
-							</span>
-							<div class="desc">
-								<h3 class="mb-5"><a href="#">Learn</a></h3>
-								<h4>Prototyping</h4>
-								<h4>User Testing</h4>
-								<h4>Leadership</h4>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section> 
-
-		<section class="ftco-section ftco-project" id="experience-section">
-			<div class="container">
-					  <div class="row justify-content-center pb-5">
-					<div class="col-md-12 heading-section text-center ftco-animate">
-		  
-			  <h2>Work Experience</h2>
-			  <div class="card mb-3">
-				<div class="card-body">
-				  <h5 class="card-title">LITS SERVICES [Senior Software Engineer] Mar 2023 - Present</h5>
-				  <p><strong>INTEGRATION:</strong> I created APIs that facilitate the integration of RETAIL with Head Office, as well as the connection between Head Office and Microsoft Dynamics 365. On the Angular platform, I developed quick discount, transfer order, and received order features for retail. Additionally, I worked on services that offer auto-printing functionality.</p>
-				  <p><strong>JOTA:</strong> My responsibilities included working on reporting and visualization using Microsoft Power BI.</p>
-				  <p><strong>PAYMENT CONTROL:</strong> I am currently working on a Xamarin cross-platform application and its associated APIs, which offer functionality for payment control, including both maker and checker roles.</p>
-				</div>
-			  </div>
-			  <div class="card mb-3">
-				<div class="card-body">
-				  <h5 class="card-title">SS&C Primatics [Software Engineer] Jun 2021-Mar 2023</h5>
-				  <p><strong>EVOLV:</strong> Converted monolithic applications to Microservices and writing & configuring files for various Microservices using JAVA Spring Boot framework. Proficient in performing code using GitHub CodeQL to remove vulnerabilities and errors in our code. Integration and Deployment using TeamCity and creating high-level Java-based applications. Monitor and provide support on AWS, Docker, Splunk, and K8s.</p>
-				</div>
-			  </div>
-			  <div class="card mb-3">
-				<div class="card-body">
-				  <h5 class="card-title">TPS [Software Engineer] Apr 2021-Jun 2021</h5>
-				  <p><strong>IRIS:</strong> Developed a wrapper which converts soap API to rest API using .net MVC, ORACLE.</p>
-				</div>
-			  </div>
-			  <div class="card mb-3">
-				<div class="card-body">
-				  <h5 class="card-title">UHF Solutions [Web Developer] Feb 2020 –Mar 2021</h5>
-				  <p><strong>ERP:</strong> I had worked for these models: Logistics, Sales, Maker-Checker for Order Management using PHP, MSSQL.</p>
-				  <p><strong>Free Card Services System:</strong> Create a model in which Territory Manager provided card details. Then details are sent one by one from General Manager to Country Sales Manager by email. So, they can accept or reject details. At the end we provided users with their profits using PHP, ORACLE.</p>
-				  <p><strong>Customer portal, User management, ETL file load using PHP, MSSQL.</strong></p>
-				</div>
-			  </div>
-			</div>
-			  </div>
-			</div>
-			
-			</section> 
-
-    <section class="ftco-section ftco-project" id="projects-section">
-    	<div class="container">
-    		<div class="row justify-content-center pb-5">
-          <div class="col-md-12 heading-section text-center ftco-animate">
-			
-          	
-			  <h2 class="mb-4">Accomplishments</h2>
-            <h2 class="mb-4">Our Projects</h2>
-            <p>I always comeup with new and innovative ideas. I always put my energy, passion and experience into hard work.</p>
-          </div>
-        </div>
-    		<div class="row">
-    			<div class="col-md-8">
-    				<div class="project img ftco-animate img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/stapledemo.png);">
-    					<div class="overlay"></div>
-	    				<div class="text text-center p-4">
-	    					<h3><a href="https://rice.staplefoods.net/">Staple Food(ERP)</a></h3>
-	    					<span>Web Application</span>
-	    				</div>
-    				</div>
-    			</div>
-    			<div class="col-md-4">
-    				<div class="row">
-    					<div class="col-md-12">
-		    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/atcomplete.png);">
-		    					<div class="overlay"></div>
-			    				<div class="text text-center p-4">
-			    					<h3><a href="https://www.atlashonda.com.pk/">Atlas Honda</a></h3>
-			    					<span>Web Application</span>
-			    				</div>
-		    				</div>
-	    				</div>
-	    				<div class="col-md-12">
-		    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/Header.png);">
-								<div class="overlay"></div>
-			    				<div class="text text-center p-4">
-			    					<h3><a href="https://www.atlashonda.com.pk/">Report Designing</a></h3>
-			    					<span>AI Application </span>
-			    				</div>    				
-		    				</div>
-	    				</div>
-    				</div>
-    			</div>
-    			<div class="col-md-4">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/BurnOutApp.png  );">
-    					<div class="overlay"></div>
-	    				<div class="text text-center p-4">
-	    					<h3><a href="https://www.facebook.com/burnout40/">BurnOut Mobile Application</a></h3>
-	    					<span>Mobile Application</span>
-	    				</div>
-    				</div>
-  				</div>
-  				<div class="col-md-8">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/bahldemo.png);">
-    					<div class="overlay"></div>
-	    				<div class="text text-center p-4">
-	    					<h3><a href="https://www.bankalhabib.com/">Bank Al Habib Limited</a></h3>
-	    					<span>Web Application</span>
-	    				</div>
-    				</div>
-  				</div>
-    		</div>
-    	</div>
-    </section>
-
-
-    <section class="ftco-section bg-light" id="blog-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-5">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h2 class="mb-4">Honors and Awards</h2>
-            
-          </div>
-        </div>
-        <div class="row d-flex">
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="images/HA1.jpeg" class="block-20" style="background-image: url('images/HA1.jpeg');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-              	<div class="d-flex align-items-center mb-3 meta">
-	                <p class="mb-0">
-	                	<span class="mr-2">SPRING 2018</span>	                	
-	                </p>
-                </div>
-                <h3 class="heading"><a href="single.html">Award</a></h3>
-                <p>85 % Scholarship after getting 3.86 GPA </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="images/HA2.png" class="block-20" style="background-image: url('images/HA2.png');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-              	<div class="d-flex align-items-center mb-3 meta">
-	                <p class="mb-0">
-	                	<span class="mr-2">Award</span>	                	
-	                </p>
-                </div>
-                <h3 class="heading"><a href="single.html">Artificial Intelligence</a></h3>  
-<p>Best Project in Artificial intelligence </p>				
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry">
-              <a href="images/HA3.jpeg" class="block-20" style="background-image: url('images/HA3.jpeg');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-              	<div class="d-flex align-items-center mb-3 meta">
-	                <p class="mb-0">
-	                	<span class="mr-2">SUMMER 2017</span>	                	
-	                </p>
-                </div>
-                <h3 class="heading"><a href="single.html">Digital Logic & Design</a></h3>  
-<p>Participate Hardware exbhibation and getting the award</p>				
-              </div>
-            </div>
+          <div class="about-links">
+            <a href="mailto:zohairaddil1@gmail.com" class="about-link"><i class="fa-solid fa-envelope"></i> zohairaddil1@gmail.com</a>
+            <a href="tel:+923293076545" class="about-link"><i class="fa-solid fa-phone"></i> +92 329 3076545</a>
+            <a href="https://linkedin.com/in/zohairadil" target="_blank" class="about-link"><i class="fa-brands fa-linkedin"></i> linkedin.com/in/zohairadil</a>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-	
-    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
-	
-      <div class="container">
-      	<div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <span class="subheading">Resume</span>
-            <h2 class="mb-4">My Resume</h2>            
-			<form action="https://drive.google.com/file/d/1REi-cgVYaHizkbzdn0GLJ_x6YpWfdk_4/view?usp=drive_link method="POST" class="bg-light p-4 p-md-5 contact-form">
-                     
-			  
-			   			  <div class="form-group">
-				<input type="submit" value="Click Here "  class="btn btn-primary py-3 px-5 text-center"/>
-				</br>
-				<a style="color:black; text-decoration:underline;">Please Download The Document To see Proper Format</a>
-				</div>			
-            </form>
+  <!-- Skills -->
+  <section id="skills" class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+        <p class="section-subtitle">A comprehensive overview of my technical expertise across frontend, backend, databases, and DevOps.</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-card-header"><i class="fa-solid fa-server"></i><h3>Languages &amp; Frameworks</h3></div>
+          <div class="skill-tags">
+            <span class="skill-tag primary">C#</span>
+            <span class="skill-tag primary">.NET Core</span>
+            <span class="skill-tag primary">ASP.NET MVC</span>
+            <span class="skill-tag primary">Angular</span>
+            <span class="skill-tag primary">Flutter / Dart</span>
+            <span class="skill-tag secondary">PHP</span>
+            <span class="skill-tag secondary">JavaScript</span>
+            <span class="skill-tag secondary">Bash</span>
           </div>
-		 
         </div>
-
-        <div class="row no-gutters block-9">
-          <div class="col-md-6 order-md-last d-flex">
-            
-          
+        <div class="skill-card">
+          <div class="skill-card-header"><i class="fa-solid fa-database"></i><h3>Databases</h3></div>
+          <div class="skill-tags">
+            <span class="skill-tag primary">SQL Server</span>
+            <span class="skill-tag primary">Oracle (OEM)</span>
+            <span class="skill-tag primary">MySQL</span>
+            <span class="skill-tag secondary">T-SQL</span>
+            <span class="skill-tag secondary">LINQ</span>
           </div>
-
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-header"><i class="fa-solid fa-cloud"></i><h3>DevOps &amp; Cloud</h3></div>
+          <div class="skill-tags">
+            <span class="skill-tag primary">Docker</span>
+            <span class="skill-tag primary">Kubernetes (K8s)</span>
+            <span class="skill-tag primary">AWS</span>
+            <span class="skill-tag primary">GitHub Actions</span>
+            <span class="skill-tag primary">TeamCity</span>
+            <span class="skill-tag secondary">CI/CD Pipelines</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-header"><i class="fa-solid fa-wrench"></i><h3>Tools &amp; Platforms</h3></div>
+          <div class="skill-tags">
+            <span class="skill-tag primary">Power BI</span>
+            <span class="skill-tag primary">JIRA</span>
+            <span class="skill-tag primary">Splunk</span>
+            <span class="skill-tag primary">GitHub CodeQL</span>
+            <span class="skill-tag secondary">MS Dynamics 365</span>
+            <span class="skill-tag secondary">Git</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-header"><i class="fa-solid fa-robot"></i><h3>AI &amp; Workflow</h3></div>
+          <div class="skill-tags">
+            <span class="skill-tag primary">Cursor AI</span>
+            <span class="skill-tag primary">Antigravity</span>
+            <span class="skill-tag primary">Blackbox AI</span>
+            <span class="skill-tag secondary">AI-Augmented Dev</span>
+            <span class="skill-tag secondary">Prompt Engineering</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-header"><i class="fa-solid fa-code-branch"></i><h3>Architecture &amp; Practices</h3></div>
+          <div class="skill-tags">
+            <span class="skill-tag primary">REST API Design</span>
+            <span class="skill-tag primary">Microservices</span>
+            <span class="skill-tag primary">ERP Integration</span>
+            <span class="skill-tag secondary">SOLID Principles</span>
+            <span class="skill-tag secondary">Code Review</span>
+            <span class="skill-tag secondary">Agile / Scrum</span>
+          </div>
         </div>
       </div>
-    </section>
-		
 
-    <footer class="ftco-footer ftco-section">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Lets talk about</h2>
-              <p>How Was It?</p>
-              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                <li class="ftco-animate"><a href="https://www.facebook.com/zohair.adilkhan.5"><span class="icon-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="https://www.instagram.com/zohair.adil/"><span class="icon-instagram"></span></a></li>
-				<li class="ftco-animate"><a href="https://github.com/zohairadil"><span class="icon-github"></span></a></li>
-                <li class="ftco-animate"><a href="https://linkedin.com/in/zohairadil"><span class="icon-linkedin"></span></a></li>
-                
-			</ul>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4 ml-md-4">
-              <h2 class="ftco-heading-2">Links</h2>
-              <ul class="list-unstyled">
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Services</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Projects</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Services</h2>
-              <ul class="list-unstyled">
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Design</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Development</a></li> 
-				<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Mobile Application</a></li>               
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>AI Application</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>DataBase Designing </a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-            	<h2 class="ftco-heading-2">CONTACT</h2>
-            	<div class="block-23 mb-3">
-	              <ul>
-	                <li><span class="icon icon-map-marker"></span><span class="text">Gulshan-e-Iqbal Karachi,Pakistan</span>
-						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14473.510189907991!2d67.0915807!3d24.9192051!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f0055579a19%3A0xf178a54a5484ac97!2sJohar%20Homes!5e0!3m2!1sen!2s!4v1709627170947!5m2!1sen!2s" width="100" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-					</li>
-					<li><a href="tel:+923432138379"><span class="icon icon-phone"></span><span class="text">+92 343 2138379</span></a></li>
-					<li><a href="mailto:zohairaddil@gmail.com"><span class="icon icon-envelope"></span><span class="text">zohairaddil@gmail.com</span></a></li>
-	              </ul>
-	            </div>
-            </div>
-          </div>
-        </div>       
+      <!-- Proficiency Bars -->
+      <div class="proficiency-section">
+        <h3 class="proficiency-title">Core Proficiency</h3>
+        <div class="proficiency-grid">
+          <div class="prof-item"><div class="prof-label"><span>C# / .NET Core</span><span>90%</span></div><div class="prof-bar"><div class="prof-fill" style="--w:90%"></div></div></div>
+          <div class="prof-item"><div class="prof-label"><span>Angular</span><span>82%</span></div><div class="prof-bar"><div class="prof-fill" style="--w:82%"></div></div></div>
+          <div class="prof-item"><div class="prof-label"><span>Flutter / Dart</span><span>78%</span></div><div class="prof-bar"><div class="prof-fill" style="--w:78%"></div></div></div>
+          <div class="prof-item"><div class="prof-label"><span>SQL / Databases</span><span>85%</span></div><div class="prof-bar"><div class="prof-fill" style="--w:85%"></div></div></div>
+          <div class="prof-item"><div class="prof-label"><span>Docker / K8s / AWS</span><span>75%</span></div><div class="prof-bar"><div class="prof-fill" style="--w:75%"></div></div></div>
+          <div class="prof-item"><div class="prof-label"><span>Power BI</span><span>80%</span></div><div class="prof-bar"><div class="prof-fill" style="--w:80%"></div></div></div>
+        </div>
       </div>
-    </footer>
-    
-  
+    </div>
+  </section>
 
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+  <!-- Experience -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Career Path</span>
+        <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+        <p class="section-subtitle">6+ years of professional experience across fintech, retail ERP, banking, and enterprise software.</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker current"></div>
+          <div class="timeline-card">
+            <div class="card-top">
+              <div>
+                <h3 class="company-name">LITS Services</h3>
+                <h4 class="job-title">Senior Software Engineer</h4>
+              </div>
+              <div class="card-meta">
+                <span class="period"><i class="fa-regular fa-calendar"></i> Mar 2023 &ndash; Present</span>
+                <span class="badge-current">Current</span>
+              </div>
+            </div>
+            <ul class="achievement-list">
+              <li><i class="fa-solid fa-chevron-right"></i> Architected and deployed high-performance APIs for Retail integration with <strong>Microsoft Dynamics 365</strong>.</li>
+              <li><i class="fa-solid fa-chevron-right"></i> Led the migration of a legacy <strong>Xamarin project to Flutter</strong> using AI-driven refactoring, significantly improving performance.</li>
+              <li><i class="fa-solid fa-chevron-right"></i> Developed core retail features in <strong>Angular</strong>, including automated printing services and discount engines.</li>
+              <li><i class="fa-solid fa-chevron-right"></i> Designed real-time reporting dashboards using <strong>Microsoft Power BI</strong> for executive decision-making.</li>
+            </ul>
+            <div class="card-tech"><span>.NET Core</span><span>Angular</span><span>Flutter</span><span>Power BI</span><span>MS Dynamics 365</span></div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <div class="card-top">
+              <div>
+                <h3 class="company-name">SS&amp;C Primatics</h3>
+                <h4 class="job-title">Software Engineer</h4>
+              </div>
+              <div class="card-meta">
+                <span class="period"><i class="fa-regular fa-calendar"></i> Jun 2021 &ndash; Mar 2023</span>
+              </div>
+            </div>
+            <ul class="achievement-list">
+              <li><i class="fa-solid fa-chevron-right"></i> Eliminated critical security vulnerabilities using <strong>GitHub CodeQL</strong> and optimized .NET application performance.</li>
+              <li><i class="fa-solid fa-chevron-right"></i> Managed containerized deployments using <strong>Docker and Kubernetes (K8s)</strong> within AWS environments.</li>
+              <li><i class="fa-solid fa-chevron-right"></i> Automated deployment pipelines using <strong>TeamCity</strong> to ensure seamless integration cycles.</li>
+            </ul>
+            <div class="card-tech"><span>.NET</span><span>Docker</span><span>K8s</span><span>AWS</span><span>TeamCity</span><span>Splunk</span></div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <div class="card-top">
+              <div>
+                <h3 class="company-name">TPS</h3>
+                <h4 class="job-title">Software Engineer</h4>
+              </div>
+              <div class="card-meta">
+                <span class="period"><i class="fa-regular fa-calendar"></i> Apr 2021 &ndash; Jun 2021</span>
+              </div>
+            </div>
+            <ul class="achievement-list">
+              <li><i class="fa-solid fa-chevron-right"></i> Engineered a performance-optimized wrapper to convert legacy <strong>SOAP APIs to RESTful services</strong> using .NET MVC and Oracle for improved interoperability.</li>
+            </ul>
+            <div class="card-tech"><span>.NET MVC</span><span>Oracle</span><span>REST API</span><span>SOAP</span></div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <div class="card-top">
+              <div>
+                <h3 class="company-name">UHF Solutions</h3>
+                <h4 class="job-title">Web Developer</h4>
+              </div>
+              <div class="card-meta">
+                <span class="period"><i class="fa-regular fa-calendar"></i> Feb 2020 &ndash; Mar 2021</span>
+              </div>
+            </div>
+            <ul class="achievement-list">
+              <li><i class="fa-solid fa-chevron-right"></i> Developed comprehensive <strong>ERP modules</strong> for Logistics and Sales using PHP and MSSQL.</li>
+              <li><i class="fa-solid fa-chevron-right"></i> Engineered an automated <strong>multi-tier approval system</strong> for Free Card Services, reducing manual processing time.</li>
+            </ul>
+            <div class="card-tech"><span>PHP</span><span>MSSQL</span><span>Oracle</span><span>ERP</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Projects -->
+  <section id="projects" class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">My Work</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <p class="section-subtitle">A selection of enterprise and commercial projects I have contributed to.</p>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card featured">
+          <div class="project-icon"><i class="fa-solid fa-store"></i></div>
+          <div class="project-content">
+            <div class="project-tag">Enterprise ERP</div>
+            <h3>Retail &amp; MS Dynamics 365 Integration</h3>
+            <p>Architected high-performance APIs connecting Retail Point-of-Sale systems with Microsoft Dynamics 365 Head Office. Includes automated printing services, discount engines, and transfer order management in Angular.</p>
+            <div class="project-tech"><span>C#</span><span>.NET Core</span><span>Angular</span><span>MS Dynamics 365</span><span>SQL Server</span></div>
+            <div class="project-impact"><i class="fa-solid fa-chart-line"></i> Enterprise-scale retail operations</div>
+          </div>
+        </div>
+        <div class="project-card featured">
+          <div class="project-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+          <div class="project-content">
+            <div class="project-tag">Mobile Migration</div>
+            <h3>Xamarin to Flutter Migration</h3>
+            <p>Led AI-driven migration of a Payment Control cross-platform application from legacy Xamarin to Flutter. Implemented maker-checker workflow for payment authorization, resulting in improved performance and maintainability.</p>
+            <div class="project-tech"><span>Flutter</span><span>Dart</span><span>C#</span><span>.NET Core</span><span>Cursor AI</span></div>
+            <div class="project-impact"><i class="fa-solid fa-chart-line"></i> Significant performance improvement</div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-icon"><i class="fa-solid fa-chart-pie"></i></div>
+          <div class="project-content">
+            <div class="project-tag">Business Intelligence</div>
+            <h3>Executive Power BI Dashboards</h3>
+            <p>Designed real-time reporting dashboards using Microsoft Power BI for executive decision-making at LITS Services. Provided business intelligence across retail, finance, and operations divisions.</p>
+            <div class="project-tech"><span>Power BI</span><span>SQL Server</span><span>DAX</span></div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <div class="project-content">
+            <div class="project-tag">Security &amp; DevOps</div>
+            <h3>Security Hardening &amp; CI/CD Pipeline</h3>
+            <p>Eliminated critical vulnerabilities using GitHub CodeQL across .NET codebases. Managed containerized deployments with Docker and K8s on AWS, and automated TeamCity pipelines at SS&amp;C Primatics.</p>
+            <div class="project-tech"><span>GitHub CodeQL</span><span>Docker</span><span>K8s</span><span>AWS</span><span>TeamCity</span></div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-icon"><i class="fa-solid fa-plug-circle-bolt"></i></div>
+          <div class="project-content">
+            <div class="project-tag">API Modernization</div>
+            <h3>SOAP to REST API Wrapper (IRIS)</h3>
+            <p>Engineered a performance-optimized wrapper at TPS to convert legacy SOAP APIs into modern RESTful services using .NET MVC and Oracle, improving interoperability for banking clients.</p>
+            <div class="project-tech"><span>.NET MVC</span><span>Oracle</span><span>REST</span><span>SOAP</span></div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-icon"><i class="fa-solid fa-boxes-stacked"></i></div>
+          <div class="project-content">
+            <div class="project-tag">ERP System</div>
+            <h3>Staple Foods ERP</h3>
+            <p>Developed comprehensive ERP modules for Logistics, Sales, and an automated multi-tier approval system for Free Card Services at UHF Solutions using PHP and MSSQL.</p>
+            <div class="project-tech"><span>PHP</span><span>MSSQL</span><span>Oracle</span><span>ERP</span></div>
+            <a href="https://rice.staplefoods.net/" target="_blank" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/scrollax.min.js"></script>
-  
-  <script src="js/main.js"></script>
-    
-  </body>
-</html>	
+  <!-- Education & Honors -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Academic Background</span>
+        <h2 class="section-title">Education &amp; <span class="gradient-text">Honors</span></h2>
+      </div>
+      <div class="edu-grid">
+        <div class="edu-card">
+          <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div class="edu-content">
+            <h3>BS in Computer Science</h3>
+            <h4>PAF Karachi Institute of Economics &amp; Technology (PAF-KIET)</h4>
+            <span class="edu-period">2016 &ndash; 2020</span>
+            <span class="edu-gpa">CGPA: 3.45 / 4.0</span>
+          </div>
+        </div>
+        <div class="honors-grid">
+          <div class="honor-card">
+            <div class="honor-icon gold"><i class="fa-solid fa-trophy"></i></div>
+            <h4>Best AI Project Award</h4>
+            <p>Recognized for Best Project in Artificial Intelligence &mdash; developed an Optical Mark Recognition MCQ evaluation system using Python and computer vision.</p>
+            <span class="honor-date">2020</span>
+          </div>
+          <div class="honor-card">
+            <div class="honor-icon blue"><i class="fa-solid fa-medal"></i></div>
+            <h4>85% Merit Scholarship</h4>
+            <p>Awarded an 85% merit scholarship in recognition of achieving a <strong>3.86 GPA</strong> performance during undergraduate studies.</p>
+            <span class="honor-date">Spring 2018</span>
+          </div>
+          <div class="honor-card">
+            <div class="honor-icon teal"><i class="fa-solid fa-microchip"></i></div>
+            <h4>Hardware Exhibition Award</h4>
+            <p>Participated and won an award at the Digital Logic &amp; Design Hardware Exhibition, showcasing innovative circuit design.</p>
+            <span class="honor-date">Summer 2017</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+        <p class="section-subtitle">Open to new opportunities. Feel free to reach out via any channel below.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          <div class="contact-items">
+            <a href="mailto:zohairaddil1@gmail.com" class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div><span class="contact-label">Email</span><span class="contact-value">zohairaddil1@gmail.com</span></div>
+            </a>
+            <a href="tel:+923293076545" class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+              <div><span class="contact-label">Phone</span><span class="contact-value">+92 329 3076545</span></div>
+            </a>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div><span class="contact-label">Location</span><span class="contact-value">Karachi, Pakistan</span></div>
+            </div>
+            <a href="https://linkedin.com/in/zohairadil" target="_blank" class="contact-item">
+              <div class="contact-icon"><i class="fa-brands fa-linkedin"></i></div>
+              <div><span class="contact-label">LinkedIn</span><span class="contact-value">linkedin.com/in/zohairadil</span></div>
+            </a>
+            <a href="https://github.com/zohairadil" target="_blank" class="contact-item">
+              <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+              <div><span class="contact-label">GitHub</span><span class="contact-value">github.com/zohairadil</span></div>
+            </a>
+          </div>
+          <div class="social-row">
+            <a href="https://linkedin.com/in/zohairadil" target="_blank" class="social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/zohairadil" target="_blank" class="social-btn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.facebook.com/zohair.adilkhan.5" target="_blank" class="social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/zohair.adil/" target="_blank" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="contact-resume">
+          <h3>My Resume</h3>
+          <p>Download my complete CV highlighting 6+ years of enterprise software engineering experience.</p>
+          <a href="https://drive.google.com/file/d/1gNOxWXpDNuxwawcroTmEkik4kPmlKkH2/view?usp=drive_link" target="_blank" class="btn btn-primary btn-large">
+            <i class="fa-solid fa-file-arrow-down"></i> Download CV
+          </a>
+          <div class="resume-highlights">
+            <div class="rh-item"><i class="fa-solid fa-star"></i> Senior Software Engineer</div>
+            <div class="rh-item"><i class="fa-solid fa-star"></i> 6+ Years Experience</div>
+            <div class="rh-item"><i class="fa-solid fa-star"></i> CGPA 3.45 — BS Computer Science</div>
+            <div class="rh-item"><i class="fa-solid fa-star"></i> AI Best Project Award</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">ZA<span class="accent">.</span></div>
+        <p class="footer-text">Muhammad Zohair Adil Khan &mdash; Senior Software Engineer</p>
+        <p class="footer-copy">&copy; 2025 Muhammad Zohair Adil Khan. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/portfolio.js"></script>
+</body>
+</html>
